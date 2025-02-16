@@ -1,0 +1,17 @@
+{
+    "name": "ml-project-container",
+    "image": "ml-project",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python"
+            ],
+            "settings": {
+                "python.pythonPath": "/usr/local/bin/python"
+            }
+        }
+    },
+    "workspaceFolder": "/app",
+    "workspaceMount": "source=${localWorkspaceFolder},target=/app,type=bind",
+    "runArgs": ["--rm"]
+}
